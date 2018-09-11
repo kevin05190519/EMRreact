@@ -10,7 +10,7 @@ class App extends Component {
     super(props)
 
     // Init
-    this.web3Provider = new Web3.providers.HttpProvider('https://rinkeby.infura.io/v3/c21c8b750fe546fda43222e14b532a15')
+    this.web3Provider = new Web3.providers.HttpProvider('http://localhost:8545')
     this.web3 = new Web3(this.web3Provider)
 
     var abi= [
